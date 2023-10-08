@@ -1,3 +1,4 @@
 tf-pipeline/test/
 tf-pipeline/train/
 venv/
+flask-app/app/static/model_sixty_epochs/
