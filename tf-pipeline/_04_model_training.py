@@ -1,5 +1,18 @@
+import numpy as np 
+import pandas as pd
+import os
+import matplotlib.pyplot as plt
+import seaborn as sns
+import tensorflow as tf
+import keras
+from keras.preprocessing import image
 from keras.models import Sequential
-from keras.layers import Conv2D, MaxPool2D, Flatten, Dense, Dropout, BatchNormalization
+from keras.layers import Conv2D, MaxPool2D, Flatten,Dense,Dropout,BatchNormalization
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import cv2
+from tensorflow.keras.applications import VGG16, InceptionResNetV2
+from keras import regularizers
+from tensorflow.keras.optimizers import Adam,RMSprop,SGD,Adamax
 
 def build_model():
 
@@ -49,11 +62,13 @@ def build_model():
 
     model.summary()
 
-    plot_model(model, show_shapes=True,
+    #TODO add plot_model
+
+    """plot_model(model, show_shapes=True,
     show_layer_names=False,
     expand_nested=True,
     rankdir="TB",
-    dpi=100)
+    dpi=100)"""
 
     return model
 

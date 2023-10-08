@@ -11,6 +11,3 @@ def load_data():
     dataset_name = 'msambare/fer2013'
     kaggle.api.dataset_download_files(dataset_name, path='tf-pipeline', unzip=True)
 
-
-
-load_data()

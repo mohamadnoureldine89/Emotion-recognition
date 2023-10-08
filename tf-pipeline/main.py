@@ -7,26 +7,27 @@ from _06_model_prediction import predict
 
 def main():
     # Step 1: Data Ingestion
-    # data = load_data()
+    # load_data() #TODO uncomment for github
 
     # Step 2: Data Validation
     # validate_data(data)
 
     # Step 3: Data Preprocessing
-    preprocessed_data = preprocess_data()
+    train_generator, validation_generator = preprocess_data()
 
     # Step 4: Model Training
     # instantiate and build the model
     model = build_model()
 
     # train the model
-    model = train_model(model, train_generator, validation_generator, epochs=1, batch_size=64)
+    model = train_model(model, train_generator, validation_generator, epochs=1, batch_size=1) # TODO change epochs to 60, batch size to 64
 
     # Step 5: Performance Evaluation
-    evaluate_model(model, preprocessed_data)
+    evaluate_model(model, train_generator, validation_generator)
+    #TODO improve this part
 
-    # Step 6: Model Prediction
-    prediction = predict(model, preprocessed_data)
+    """# Step 6: Model Prediction
+    prediction = predict(model, preprocessed_data)"""
 
 if __name__ == "__main__":
     main()
