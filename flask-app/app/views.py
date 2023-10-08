@@ -35,6 +35,7 @@ def index():
 		letters = string.ascii_lowercase
 		name = ''.join(random.choice(letters) for i in range(10)) + '.png'
 		full_filename =  'uploads/' + name
+		image_upload.save(os.path.join(app.config['INITIAL_FILE_UPLOADS'], name))
 
 		image = Image.open(image_upload)
 
