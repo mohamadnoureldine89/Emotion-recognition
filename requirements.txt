@@ -10,6 +10,7 @@ astunparse==1.6.3
 async-timeout==4.0.3
 attrs==23.1.0
 backcall==0.2.0
+bleach==6.1.0
 blinker==1.6.3
 boto3==1.28.17
 botocore==1.31.17
@@ -45,6 +46,7 @@ Jinja2==3.1.2
 jmespath==1.0.1
 jupyter_client==8.3.1
 jupyter_core==5.3.2
+kaggle==1.5.16
 keras==2.14.0
 kiwisolver==1.4.5
 libclang==16.0.6
@@ -84,6 +86,7 @@ PyJWT==2.8.0
 pyparsing==3.1.1
 python-dateutil==2.8.2
 python-dotenv==1.0.0
+python-slugify==8.0.1
 pytz==2023.3.post1
 pyzmq==25.1.1
 requests==2.31.0
@@ -101,6 +104,7 @@ tensorflow-estimator==2.14.0
 tensorflow-io-gcs-filesystem==0.34.0
 tensorflow-macos==2.14.0
 termcolor==2.3.0
+text-unidecode==1.3
 tornado==6.3.3
 tqdm==4.66.1
 traitlets==5.11.2
@@ -108,6 +112,7 @@ typing_extensions==4.8.0
 tzdata==2023.3
 urllib3==1.26.17
 wcwidth==0.2.8
+webencodings==0.5.1
 Werkzeug==3.0.0
 wrapt==1.14.1
 yarl==1.9.2
